@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pita form</title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>welcome to jamal er pita ghor</h2>
+    <form>
+        <label for="name">your name:</label>
+        <input id="name" type="text" placeholder="Your name">
+        <label for="Email">your Email:</label>
+        <input id="Email" type="Email" placeholder="Your Email">
+        <label for="phone">your phone number:</label>
+        <input id="phone" type="number" placeholder="Your phone number">
+        <fieldset>
+            <legend>pick one pita</legend>
+       
+        <label for="chitoi">
+            <input type="radio" name="pita" id= "chitoi">
+            chitoi
+        </label>
+        <label for="vapa">
+            <input type="radio" name="pita" id= "vapa">
+            vapa
+        </label>
+        <label for="puri">
+            <input type="radio" name="pita" id= "puri">
+            puri
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Select one or more vortas</legend>
+        <label for="sorisa">
+            <input type="checkbox" name="vorta" id="sorisa">
+            Sorisa
+        </label>
+        <label for="Shutki">
+            <input type="checkbox" name="vorta" id="Shutki">
+            Shutki
+        </label>
+        <label for="dal">
+            <input type="checkbox" name="vorta" id="dal">
+            dal
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>special instruction</legend>
+        <textarea name="" id="" cols="30" rows="3"></textarea>
+    </fieldset>
+    <br>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

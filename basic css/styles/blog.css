@@ -1,0 +1,12 @@
+h3{
+    color: brown;
+}
+.header{
+    height: 200px;
+    width: 1000px;
+    background-image: url('ss.png');
+    background-color:gray;
+    background-blend-mode: multiply;
+     background-size: cover;
+
+}
