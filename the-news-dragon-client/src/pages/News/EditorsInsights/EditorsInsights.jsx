@@ -1,34 +1,13 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useEffect, useState } from 'react';
+/* eslint-disable no-unused-vars */
+import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import first from '../../../assets/1.png';
 import second from '../../../assets/2.png';
 import third from '../../../assets/3.png';
 
-const LeftNav = () => {
-    const [catagories,setCatagories] = useState([]);
-    useEffect( ()=>{
-        fetch('http://localhost:5000/catagories')
-        .then(res=>res.json())
-        .then(data => setCatagories(data))
-        .catch(error => console.log(error));
-        }
-    )
+const EditorsInsights = () => {
     return (
-        <div>
-            <h4>All Category</h4>
-            <div className='ps-4'>
-            {
-                catagories.map(catagory =><p
-                key={catagory.id}
-                >
-             <Link to={`/catagory/${catagory.id}`} className='text-decoration-none text-black'>{catagory.name} </Link>
-                </p>)
-            }
-            </div>
-            <div>
-            <Row xs={1} md={2} lg={1} className="g-4 mt-4">
+        <Row xs={1} md={2} lg={3} className="g-4 mt-4">
           <Col>
             <Card>
               <Card.Img variant="top" src={first} />
@@ -69,10 +48,7 @@ const LeftNav = () => {
             </Card>
           </Col>
       </Row>
-            </div>
-           
-        </div>
     );
 };
 
-export default LeftNav;
+export default EditorsInsights;
